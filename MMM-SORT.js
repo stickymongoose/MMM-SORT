@@ -186,9 +186,9 @@ Module.register("MMM-SORT", {
         var date2 = document.createElement("div");
         date2.classList.add("xsmall", "bright", "date2");
 		if (tides[1].type == "Low") {
-            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[1].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[1].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + LowText + "</font>" ; // Stackoverflow.com
+            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[1].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[1].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + tides[1].height + "</font>" ; // Stackoverflow.com
         } else {
-            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[1].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[1].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + HighText + "</font>"; // Stackoverflow.com
+            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[1].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[1].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + tides[1].height + "</font>"; // Stackoverflow.com
         }
 		top.appendChild(date2);
 		
@@ -197,9 +197,9 @@ Module.register("MMM-SORT", {
         var date = document.createElement("div");
         date.classList.add("xsmall", "bright", "date");
 		if (tides[2].type == "Low") {
-            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[2].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[2].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + LowText + "</font>" ; // Stackoverflow.com
+            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[2].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[2].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + tides[2].height + "</font>" ; // Stackoverflow.com
         } else {
-            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[2].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[2].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + HighText + "</font>"; // Stackoverflow.com
+            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[2].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[2].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + tides[2].height + "</font>"; // Stackoverflow.com
         }
 		top.appendChild(date);
 		
@@ -208,9 +208,9 @@ Module.register("MMM-SORT", {
         var date2 = document.createElement("div");
         date2.classList.add("xsmall", "bright", "date2");
 		if (tides[3].type == "Low") {
-            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[3].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[3].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + LowText + "</font>" ; // Stackoverflow.com
+            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[3].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[3].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + tides[3].height + "</font>" ; // Stackoverflow.com
         } else {
-            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[3].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[3].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + HighText + "</font>"; // Stackoverflow.com
+            date2.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[3].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[3].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + tides[3].height + "</font>"; // Stackoverflow.com
         }
 		top.appendChild(date2);
 		
