@@ -173,9 +173,9 @@ Module.register("MMM-SORT", {
 		} else { date.classList.add("xsmall", "bright", "date");
 	}
 		if (tides[0].type == "Low") {
-            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[0].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[0].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + LowText + "</font>"; // Stackoverflow.com
+            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/low.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[0].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[0].dt * 1000).local().format("  h:mm a") + " <font color=#FCFF00>" + " &nbsp " + tides.height + "</font>"; // Stackoverflow.com
         } else {
-            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[0].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[0].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + HighText + "</font>"; // Stackoverflow.com
+            date.innerHTML = "<img class = img src=modules/MMM-SORT/images/high.png width=12% height=12%>" + " &nbsp " + moment.utc(tides[0].dt * 1000).local().format("ddd") + " &nbsp" + moment.utc(tides[0].dt * 1000).local().format("  h:mm a") + " <font color=#f3172d>" + " &nbsp " + tides.height + "</font>"; // Stackoverflow.com
         }
 		
 		top.appendChild(date);
